@@ -1,0 +1,10 @@
+.login-card {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: center;
+}
