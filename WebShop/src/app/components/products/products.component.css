@@ -1,0 +1,82 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.Products{
+  padding: 1rem;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Fixed height for the card */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for image */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Adds ellipsis when text overflows */
+}
+
+.card p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  flex-grow: 1; /* Allows description to take up space but not overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits description to 3 lines */
+  -webkit-box-orient: vertical; /* Ensures the description is truncated */
+}
+
+.rating {
+  font-size: 1rem;
+  color: #ffb400;
+}
+
+.rating span {
+  margin-right: 2px;
+}
+
+.rating .filled {
+  color: #ff8c00;
+}
+
+.add-to-cart {
+  background-color: #673ab7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #6c6d6e;
+}
